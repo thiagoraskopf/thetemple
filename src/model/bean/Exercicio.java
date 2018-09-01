@@ -10,18 +10,21 @@ package model.bean;
  * @author alan
  */
 public class Exercicio {
+
     private int codigo;
     private String nome;
     private String grupoMuscular;
     private String serie;
+    private String descricao;
 
     public Exercicio() {
     }
 
-    public Exercicio(String nome, String grupoMuscular, String serie) {
+    public Exercicio(String nome, String grupoMuscular, String serie, String descricao) {
         this.nome = nome;
         this.grupoMuscular = grupoMuscular;
         this.serie = serie;
+        this.descricao = descricao;
     }
 
     public int getCodigo() {
@@ -54,5 +57,13 @@ public class Exercicio {
 
     public void setSerie(String serie) {
         this.serie = serie;
+    }
+
+    public String getDescricao() {
+        return descricao;
+    }
+
+    public void setDescricao(String descricao) {
+        this.descricao = descricao;
     }
 }
